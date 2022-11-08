@@ -1,0 +1,39 @@
+nav {
+  /* box modeling properties */
+  height: 120px;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  background-color: #4056a1;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+
+  /* flexbox properties */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.navNewTweet {
+  /* box modeling properties */
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  /* flexbox properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navWriteNewFont {
+  display: flex;
+  justify-content: space-around;
+}
+
+i {
+  color: orangered;
+}
