@@ -52,6 +52,7 @@ body {
   border-bottom: solid #545149 4px;
   padding-top: 10px;
   padding-bottom: 10px;
+  word-break: break-all;
 }
 
 .headerName {

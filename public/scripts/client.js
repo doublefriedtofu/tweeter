@@ -5,7 +5,7 @@
  */
 
 $(document).ready(function() {
-  
+
   const renderTweets = function(tweets) {
     // loops through tweets
     for (let tweet of tweets) {
@@ -17,6 +17,12 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(tweet) {
+    const escape = function(str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
+
     let $tweet = /* Your code for creating the tweet element */
       `<div class="tweet">
         <header>
@@ -30,7 +36,7 @@ $(document).ready(function() {
         </header>
         
         <div class="theTweet">
-        ${tweet.content.text}
+        <a>${escape(tweet.content.text)}</a>
         </div>
         
         <div class="tweets-container"></div>
@@ -55,15 +61,18 @@ $(document).ready(function() {
     event.preventDefault();
     const formData = $(this).serialize();
 
-    const textAreaInput = $('textarea').val()
-    const textAreaLength = (textAreaInput.length)
-    if(!textAreaLength) {
-      return alert("Your Tweet is empty!") 
+    const textAreaInput = $('textarea').val();
+    const textAreaLength = (textAreaInput.length);
+
+
+    if (!textAreaLength) {
+      $("#error-empty").slideDown("slow").delay(2000).slideUp();
+      return;
     }
     if (textAreaLength > 140) {
-      return alert("Your Tweet is too long!")
+      $("#error-tooLong").slideDown("slow");
+      return;
     }
-
     let url = '/tweets';
 
     $.ajax({
@@ -74,7 +83,11 @@ $(document).ready(function() {
       loadTweets();
     });
 
-    this.reset();
+    const textarea = document.getElementById('tweet-text');
+    const counter = document.getElementById('counter');
+
+    textarea.value = "";
+    counter.value = 140;
   });
 
   const loadTweets = function() {
