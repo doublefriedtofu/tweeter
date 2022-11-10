@@ -1,5 +1,7 @@
 nav {
-  /* box modeling properties */
+  /* 
+   * box modeling properties 
+   */
   height: 120px;
   color: #FFFFFF;
   font-family: 'Bungee', cursive;
@@ -12,7 +14,9 @@ nav {
   width: 100%;
 
 
-  /* flexbox properties */
+  /* 
+   * flexbox properties 
+   */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -29,11 +33,6 @@ nav {
   align-items: center;
 }
 
-.navWriteNewFont {
-  display: flex;
-  justify-content: space-around;
-}
-
-i {
+.doubleArrows {
   color: orangered;
 }

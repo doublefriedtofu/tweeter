@@ -15,3 +15,69 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.tweet {
+  /* 
+   * box modeling properties 
+   */
+   box-sizing: border-box;
+   width: 100%;
+   border: solid #545149 4px;
+   padding: 10px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+  /* 
+  * flexbox properties 
+  */
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet:hover {
+  box-shadow: 7px 7px #b7b8cc
+}
+
+.tweet header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.tweet header div {
+  display: flex;
+  align-items: center;
+}
+
+.theTweet {
+  border-bottom: solid #545149 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.headerName {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tweet footer {
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.tweet footer button {
+  color: #41507b;
+  background-color: transparent;
+  border: none;
+}
+
+.tweet footer button:hover {
+  color: #d1c84a;
+}

@@ -1,9 +1,7 @@
 $(document).ready(function() {
-  console.log("ready!")
-
   // for ID
   $('#tweet-text').on("keyup keydown", function() {
-    const maxLength = 140 - $(this).val().length
+    const maxLength = 140 - $(this).val().length;
     if (maxLength < 0) {
       $('.counter').css("color", "red");
     } else {
