@@ -36,3 +36,14 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
+
+@media (min-width: 1024px) {
+  .embody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    margin-top: 120px;
+  }
+}

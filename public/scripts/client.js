@@ -27,20 +27,17 @@ $(document).ready(function() {
       `<div class="tweet">
         <header>
           <div>
-            <img class="eachTweet" src="${tweet.user.avatars}">
-            <a>${tweet.user.name}</a>
+            <img class="userAvatar" src="${tweet.user.avatars}">
+            <a class="userName">${tweet.user.name}</a>
           </div>
-          <div class="headerName">
+          <div class="userHandle">
             <a>${tweet.user.handle}</a>
           </div>
         </header>
         
         <div class="theTweet">
-        <a>${escape(tweet.content.text)}</a>
+        <a><strong>${escape(tweet.content.text)}</strong></a>
         </div>
-        
-        <div class="tweets-container"></div>
-        
         <footer>
           <div class="date">
             <a>${timeago.format(tweet.created_at)}</a>
@@ -66,11 +63,11 @@ $(document).ready(function() {
 
 
     if (!textAreaLength) {
-      $("#error-empty").slideDown("slow").delay(2000).slideUp();
+      $("#error-empty").slideDown("fast").delay(1500).slideUp("slow");
       return;
     }
     if (textAreaLength > 140) {
-      $("#error-tooLong").slideDown("slow");
+      $("#error-tooLong").slideDown("fast").delay(1500).slideUp("slow");
       return;
     }
     let url = '/tweets';

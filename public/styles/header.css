@@ -15,25 +15,35 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
 }
 
 .headerProfilePicture {
   /* 
    * box modeling properties 
    */
-  margin-top: 120px;
+  margin-top: 80px;
   height: 400px;
-  width: 100%;
 
   /* 
-   * flexbox properties 
-   */
+    * flexbox properties 
+    */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f2edb3;
+  background-color: #eec374;
   /* background: linear-gradient(45deg, #f06, yellow); */
   background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+}
+
+.headerName {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .headerProfilePicture {
+    width: 25vw;
+    margin-top: 120px;
+
+  }
 }

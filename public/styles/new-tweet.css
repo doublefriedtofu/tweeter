@@ -17,7 +17,7 @@ body {
 
 #error-empty {
   display: none;
-  border: 3px solid #ff1800;
+  border: 1.5px solid #ff1800;
   background: linear-gradient(45deg, yellow, orange);
   margin-top: 3%;
   padding: 2%;
@@ -26,7 +26,7 @@ body {
 
 #error-tooLong {
   display: none;
-  border: 3px solid #ff1800;
+  border: 1.5px solid #ff1800;
   background: linear-gradient(45deg, yellow, orange);
   margin-top: 3%;
   padding: 2%;

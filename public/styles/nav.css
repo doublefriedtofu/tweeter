@@ -2,7 +2,7 @@ nav {
   /* 
    * box modeling properties 
    */
-  height: 120px;
+  height: 80px;
   color: #FFFFFF;
   font-family: 'Bungee', cursive;
   background-color: #4056a1;
@@ -24,12 +24,14 @@ nav {
 .navNewTweet {
   /* 
    * box modeling properties 
-   */  font-size: 20px;
+   */
+  font-size: 0.7em;
   font-family: 'Source Sans Pro', sans-serif;
 
   /*
    * flexbox properties 
-   */  display: flex;
+   */
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -38,3 +40,9 @@ nav {
   color: orangered;
 }
 
+@media (max-width: 1024px) {
+  nav {
+    background-color: #eec374;
+    background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+  }
+}

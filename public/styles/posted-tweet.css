@@ -19,12 +19,12 @@ body {
   /* 
    * box modeling properties 
    */
-   box-sizing: border-box;
-   width: 100%;
-   border: solid #545149 4px;
-   padding: 10px;
-   margin-top: 30px;
-   margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #545149 4px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   /* 
   * flexbox properties 
   */
@@ -37,33 +37,59 @@ body {
 }
 
 .tweet header {
+  /* 
+   * flexbox properties 
+   */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
 
 .tweet header div {
+  /* 
+   * flexbox properties 
+   */
   display: flex;
   align-items: center;
+}
+
+.userAvatar {
+  size-adjust: 30px;
+}
+
+.userName {
+  padding-left: 0.8rem;
 }
 
 .theTweet {
   border-bottom: solid #545149 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
   word-break: break-all;
 }
 
-.headerName {
+.userHandle {
+  /* 
+   * box modeling properties 
+   */
+  color: lightgrey;
   display: flex;
   justify-content: flex-end;
 }
 
 .tweet footer {
-  font-size: 13px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* 
+   * box modeling properties 
+   */
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  /* 
+   * flexbox properties 
+   */
   display: flex;
   justify-content: space-between;
 }
