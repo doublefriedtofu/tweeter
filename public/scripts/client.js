@@ -61,17 +61,19 @@ $(document).ready(function() {
     const textAreaInput = $('textarea').val();
     const textAreaLength = (textAreaInput.length);
 
-
+    // error messages if there is no input
     if (!textAreaLength) {
       $("#error-empty").slideDown("fast").delay(1500).slideUp("slow");
       return;
     }
+    // error message if there is more than 140 charactor count
     if (textAreaLength > 140) {
       $("#error-tooLong").slideDown("fast").delay(1500).slideUp("slow");
       return;
     }
     let url = '/tweets';
 
+    // uploads submitted tweet using ajax
     $.ajax({
       url: url,
       method: "POST",
@@ -80,9 +82,9 @@ $(document).ready(function() {
       loadTweets();
     });
 
+    // resets input and char count after tweet submit
     const textarea = document.getElementById('tweet-text');
     const counter = document.getElementById('counter');
-
     textarea.value = "";
     counter.value = 140;
   });
