@@ -17,8 +17,11 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Screenshots
 
+Desktop view
 !["Screenshot of a desktop screen"](https://raw.githubusercontent.com/doublefriedtofu/tweeter/5909c21da7f249bbd53ef0b8cc345232953a3584/docs/Tweeter%20Desktop%20View.png)
 
+Mobile/tablet view
 !["Screenshot of a mobile/tablet screen"](https://raw.githubusercontent.com/doublefriedtofu/tweeter/5909c21da7f249bbd53ef0b8cc345232953a3584/docs/Tweeter%20Mobile%20View.png)
 
+Mobile view with a warning message
 !["Screenshot of a mobile screen with warning message"](https://raw.githubusercontent.com/doublefriedtofu/tweeter/5909c21da7f249bbd53ef0b8cc345232953a3584/docs/Tweeter%20Mobile%20View.png)
